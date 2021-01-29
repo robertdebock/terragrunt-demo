@@ -20,6 +20,8 @@ This repository contains a simpel sample of what Terragrunt can do.
 1. Terraform installed.
 2. Terragrunt installed.
 3. Environment variable `DIGITALOCEAN_TOKEN` set.
+3. Environment variable `CLOUDFLARE_EMAIL` set.
+3. Environment variable `CLOUDFLARE_API_KEY` set.
 
 ## Running terragrunt
 
