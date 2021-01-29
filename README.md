@@ -24,6 +24,7 @@ This repository contains a simpel sample of what Terragrunt can do.
 ## Running terragrunt
 
 1. Go into the directory that you want to deploy, for example `development`.
-2. Run `terragrunt plan` to understand what is going to happen.
-3. Run `terragrunt apply` to actually change the infrastructure.
-4. Run `terraform destroy` to save money.
+2. Run `terragrunt init` to download all dependencies. (providers and modules)
+3. Run `terragrunt plan` to understand what is going to happen.
+4. Run `terragrunt apply` to actually change the infrastructure.
+5. Run `terraform destroy` to save money.

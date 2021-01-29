@@ -1,15 +1,3 @@
-variable "amount" {
-  description = "The number of instances to create."
-}
-
-variable "size" {
-  description = "The size of the instance(s) to create."
-}
-
-variable "name" {
-  description = "The name of the instance(s) to create."
-}
-
 module "ssh_key" {
   source     = "robertdebock/ssh_key/digitalocean"
   version    = "2.0.0"
@@ -40,8 +28,4 @@ module "record" {
   value   = module.droplet[count.index].ipv4_address
   zone_id = data.cloudflare_zones.default.zones[0].id
   count   = var.amount
-}
-
-output "name" {
-  value = module.record.*.hostname
 }
