@@ -1,3 +1,3 @@
 output "name" {
-  value = module.record.*.hostname
+  value = digitalocean_droplet.default[*].ipv4_address
 }

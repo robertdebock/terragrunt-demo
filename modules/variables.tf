@@ -1,5 +1,6 @@
 variable "amount" {
   description = "The number of instances to create."
+  default     = 1
 }
 
 variable "size" {
